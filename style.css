@@ -1,0 +1,129 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background: linear-gradient(to top right, #FC636B, #FF6D92 35%, #FFB900 100%);
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  margin-top: 25px;
+  background-color: white;
+  background: white;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.text-align {
+  text-align: center;
+}
+
+#profile-picture {
+  border-radius: 50%;
+  border: 5px solid #a90329;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  padding-left: 0px;
+}
+
+#movies img {
+  width: 100px;
+  padding: 20px;
+}
+
+.btn-click {
+  background: #a90329;
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 4px;
+}
+
+.btn-click:hover {
+  background-color: #C61414;
+  color: white;
+}
+
+.logo {
+
+}
+
+h1, h2, h3 {
+  font-style: 'Montserrat', sans-serif;
+  font-weight: 700;
+  
+}
+
+h1 {
+  color: #DB5658;
+  font-size: 2em;
+}
+
+h2, h3 {
+  color: #979797;
+  font-size: 1.7em;
+}
+
+
+
+img {
+  width: 300px;
+}
+
+p, a {
+  font-size: 1.1em;
+}
+
+p {
+  color: #B2B5B8;
+}
+
+a {
+  text-decoration: none;
+  color: #ACA6A0;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #DB5658;
+}
+
