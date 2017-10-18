@@ -8,75 +8,101 @@
     <title>Guillaume's profile page</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card text-align">
-        <img src="images/me.jpg" id="profile-picture" alt="Guillaume's profile picture">
-        <h1>Guillaume Barthere</h1>
-        <h2>Freelance programmer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam inventore numquam, repellendus asperiores soluta, quisquam molestiae aut quasi magni ipsam. Culpa aperiam odit laudantium molestias maiores, veritatis explicabo! Dignissimos, cumque?</p>
-        <a href="https://github.com/gbarthere" target="_blank" class="btn-click">GitHub</a>
-      </div>
-      <div class="card text-align">
-        <ul class="list-inline">
-          <li>
-            <a href="https://www.facebook.com/guillaume.barthere" target="_blank">
-              <i class="fa fa-facebook-square logo" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/guillaume-barthère-87609021" target="_blank">
-              <i class="fa fa-linkedin-square logo" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/GuillaumeJRB" target="_blank">
-              <i class="fa fa-twitter-square logo" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="card text-align" id="movies">
-        <h2>My Favorite movies</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img src="images/rushmore.jpg" alt="Rushmore poster">
-              </td>
-              <td>
-                <h3>Rushmore</h3>
-                <p>The extracurricular king of Rushmore preparatory school is put on academic probation.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="images/beautiful_mind.jpg" alt="Beautiful mind poster">
-              </td>
-              <td>
-                <h3>Beautiful mind</h3>
-                <p>After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="images/darjeeling.jpg" alt="Darjeeling poster">
-              </td>
-              <td>
-                <h3>Darjeeling limited</h3>
-                <p>A year after their father's funeral, three brothers travel across India by train in an attempt to bond with each other.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="card text-align">
-        <h2>About this page</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam repudiandae perferendis provident voluptate error cum in alias? Voluptatum consequuntur id, ratione, non eius cum obcaecati consequatur voluptates corporis distinctio.</p>
-        <ul class="list-inline">
-          <li><i class="fa fa-space-shuttle logo" aria-hidden="true"></i></li>
-          <li><i class="fa fa-eye logo" aria-hidden="true"></i></li>
-          <li><i class="fa fa-bolt logo" aria-hidden="true"></i></li>
-        </ul>
+
+    <div id="sidebar">
+      <ul class="list-inline text-align">
+        <li>
+          <a href="#profile">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#movies">
+            <i class="fa fa-film" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <i class="fa fa-link" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="page-content">
+      <div class="container">
+        <div class="card text-align" id="profile">
+          <img src="images/me.jpg" id="profile-picture" alt="Guillaume's profile picture">
+          <h1>Guillaume Barthere</h1>
+          <h2>Programmer|Meditator|Boxer|Surfer|Learner</h2>
+          <p>After 5 years in Shanghai managing a knitwear trading, I decided to re-imagine myself. This journey is starting with me learning to code in beautiful Lisbon</p>
+          <a href="https://github.com/gbarthere" target="_blank" class="btn-click">GitHub</a>
+        </div>
+
+        <div class="card text-align">
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.facebook.com/guillaume.barthere" target="_blank">
+                <i class="fa fa-facebook-square logo" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/guillaume-barthère-87609021" target="_blank">
+                <i class="fa fa-linkedin-square logo" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/GuillaumeJRB" target="_blank">
+                <i class="fa fa-twitter-square logo" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card text-align" id="movies">
+          <h2>My Favorite movies</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="images/rushmore.jpg" alt="Rushmore poster">
+                </td>
+                <td class="align-left">
+                  <h3><strong>|</strong>Rushmore</h3>
+                  <p>When a beautiful first-grade teacher (Olivia Williams) arrives at a prep school, she soon attracts the attention of an ambitious teenager named Max (Jason Schwartzman), who quickly falls in love with her. Max turns to the father (Bill Murray) of two of his schoolmates for advice on how to woo the teacher. However, the situation soon gets complicated when Max's new friend becomes involved with her, setting the two pals against one another in a war for her attention.</p>
+                </td>
+              </tr>
+              <tr>
+                <td class="align-left">
+                  <img src="images/beautiful_mind.jpg" alt="Beautiful mind poster">
+                </td>
+                <td class="align-left">
+                  <h3><strong>|</strong>Beautiful mind</h3>
+                  <p>A human drama inspired by events in the life of John Forbes Nash Jr. From the heights of notoriety to the depths of depravity, John Forbes Nash Jr. experienced it all. A mathematical genius, he made an astonishing discovery early in his career and stood on the brink of international acclaim. But the handsome and arrogant Nash soon found himself on a painful and harrowing journey of self-discovery.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/darjeeling.jpg" alt="Darjeeling poster">
+                </td>
+                <td class="align-left">
+                  <h3><strong>|</strong>Darjeeling limited</h3>
+                  <p>Estranged brothers Francis (Owen Wilson), Peter (Adrien Brody) and Jack (Jason Schwartzman) reunite for a train trip across India. The siblings have not spoken in over a year, ever since their father passed away. Francis is recovering from a motorcycle accident, Peter cannot cope with his wife's pregnancy, and Jack cannot get over his ex-lover. The brothers fall into old patterns of behavior as Francis reveals the real reason for the reunion: to visit their mother in a Himalayan convent.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card text-align" id="about">
+          <h2>About this page</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quibusdam repudiandae perferendis provident voluptate error cum in alias? Voluptatum consequuntur id, ratione, non eius cum obcaecati consequatur voluptates corporis distinctio.</p>
+          <i class="fa fa-btc logo" aria-hidden="true"></i>
+          <ul class="list-inline">
+            <li><i class="fa fa-eye logo" aria-hidden="true"></i></li>
+            <li><i class="fa fa-bolt logo" aria-hidden="true"></i></li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

@@ -1,31 +1,38 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background: linear-gradient(to top right, #FC636B, #FF6D92 35%, #FFB900 100%);
+  font-weight: 400;
+  background: #2C3E50;  /* fallback for old browsers */
+  background: #FC354C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.container {
-  width: 800px;
+a {
+  text-decoration: none;
+}
+
+#page-content {
+  width: 1000px;
   margin: 0 auto;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .container {
+  #page-content {
     width: 700px;
     margin: 0 auto;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .container {
+  #page-content {
     width: 500px;
     margin: 0 auto;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  .container {
+  #page-content {
     width: 300px;
     margin: 0 auto;
   }
@@ -45,12 +52,11 @@ body {
   text-align: center;
 }
 
-#profile-picture {
-  border-radius: 50%;
-  border: 5px solid #a90329;
+.align-left {
+  text-align: left;
 }
 
-.list-inline > li {
+.list-inline li {
   display: inline-block;
   padding: 0px 20px;
 }
@@ -59,18 +65,10 @@ body {
   padding-left: 0px;
 }
 
-#movies img {
-  width: 100px;
-  padding: 20px;
-}
-
 .btn-click {
-  background: #a90329;
-  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+  background: #DB5658;
   color: white;
+  font-size: 1.5em;
   font-weight: 500;
   padding: 10px;
   padding-left: 50px;
@@ -81,16 +79,77 @@ body {
 .btn-click:hover {
   background-color: #C61414;
   color: white;
+  font-size: 1.7em;
 }
 
 .logo {
-
+  color: black;
+  font-size: 100px;
 }
 
-h1, h2, h3 {
+.logo:hover {
+  color: #DB5658;
+  font-size: 120px;
+}
+
+#movies img {
+  width: 150px;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+#profile-picture {
+  border-radius: 50%;
+  border: 5px solid #DB5658;
+}
+
+#sidebar {
+  background-color: #384047;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 120px;
+  text-align: center;
+}
+
+#sidebar li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  #side-bar {
+    width: 100px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  #side-bar {
+    width: 80px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  #side-bar {
+    width: 60px;
+  }
+}
+
+#side-bar {
+  margin-left: 300px;
+}
+
+h1, h2, h3, .btn-click {
   font-style: 'Montserrat', sans-serif;
   font-weight: 700;
-  
 }
 
 h1 {
@@ -99,11 +158,9 @@ h1 {
 }
 
 h2, h3 {
-  color: #979797;
+  color: #F38181;
   font-size: 1.7em;
 }
-
-
 
 img {
   width: 300px;
@@ -114,16 +171,6 @@ p, a {
 }
 
 p {
-  color: #B2B5B8;
+  color: black;
+  font-weight: bold;
 }
-
-a {
-  text-decoration: none;
-  color: #ACA6A0;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #DB5658;
-}
-
