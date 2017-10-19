@@ -1,5 +1,16 @@
+/* --- Import Font-Awesome stylesheets --- */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+/* --- Import Google Fonts stylesheets --- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Code+Pro");
+/* --- Import Components stylesheets --- */
+@import url("components/avatar.css");
+@import url("components/card.css");
+@import url("components/sidebar.css");
+@import url("components/button.css");
+
+/* --- Define basic style for fonts & colors --- */
+
 body {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background: #2C3E50;  /* fallback for old browsers */
   background: #FC354C;  /* fallback for old browsers */
@@ -7,6 +18,13 @@ body {
   background: linear-gradient(to bottom right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+p {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1 h2 h3 {
+  font-family: 'Montserrat', sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -109,8 +127,11 @@ a {
   left: 0px;
   top: 0px;
   bottom: 0px;
-  width: 120px;
+  width: 70px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #sidebar li {
@@ -173,4 +194,11 @@ p, a {
 p {
   color: black;
   font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: row-wrap;
 }
