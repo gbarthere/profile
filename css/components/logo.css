@@ -1,0 +1,16 @@
+#social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: #666;
+  font-size: 50px;
+  transition: all 0.5s ease;
+}
+
+.logo:hover {
+  color: #444;
+  font-size: 70px;
+}

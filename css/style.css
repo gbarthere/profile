@@ -1,204 +1,69 @@
 /* --- Import Font-Awesome stylesheets --- */
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 /* --- Import Google Fonts stylesheets --- */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Code+Pro");
+@import url(<"https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 /* --- Import Components stylesheets --- */
+
 @import url("components/avatar.css");
 @import url("components/card.css");
 @import url("components/sidebar.css");
 @import url("components/button.css");
+@import url("components/logo.css");
+@import url("layout/main-container.css");
+@import url("layout/sidebar-container.css");
 
 /* --- Define basic style for fonts & colors --- */
 
-body {
-  font-weight: 400;
-  background: #2C3E50;  /* fallback for old browsers */
-  background: #FC354C;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-p {
-  font-family: 'Source Code Pro', monospace;
-}
-
-h1 h2 h3 {
-  font-family: 'Montserrat', sans-serif;
-}
-a {
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
+  color: #444;
+  background-color: #F6F6F7;
 }
 
-#page-content {
-  width: 1000px;
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  #page-content {
+  .main-container {
     width: 700px;
     margin: 0 auto;
   }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  #page-content {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  #page-content {
-    width: 300px;
-    margin: 0 auto;
-  }
-}
 
-.card {
-  margin-top: 25px;
-  background-color: white;
-  background: white;
-  padding: 25px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.text-align {
-  text-align: center;
-}
-
-.align-left {
-  text-align: left;
-}
-
-.list-inline li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.list-inline {
-  padding-left: 0px;
-}
-
-.btn-click {
-  background: #DB5658;
-  color: white;
-  font-size: 1.5em;
-  font-weight: 500;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 4px;
-}
-
-.btn-click:hover {
-  background-color: #C61414;
-  color: white;
-  font-size: 1.7em;
-}
-
-.logo {
-  color: black;
-  font-size: 100px;
-}
-
-.logo:hover {
-  color: #DB5658;
-  font-size: 120px;
-}
-
-#movies img {
-  width: 150px;
-  padding: 20px;
-  border-radius: 100%;
-}
-
-#profile-picture {
-  border-radius: 50%;
-  border: 5px solid #DB5658;
-}
-
-#sidebar {
-  background-color: #384047;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  width: 70px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#sidebar li {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-#sidebar a {
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-}
-
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  #side-bar {
+  .sidebar-container {
     width: 100px;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  #side-bar {
+  .main-container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+    .sidebar-container {
     width: 80px;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
-  #side-bar {
+  .main-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .sidebar-container {
     width: 60px;
   }
 }
 
-#side-bar {
-  margin-left: 300px;
-}
-
-h1, h2, h3, .btn-click {
-  font-style: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-  color: #DB5658;
-  font-size: 2em;
-}
-
-h2, h3 {
-  color: #F38181;
-  font-size: 1.7em;
-}
-
-img {
-  width: 300px;
-}
-
-p, a {
-  font-size: 1.1em;
-}
-
-p {
-  color: black;
-  font-weight: bold;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-flow: row-wrap;
+.text-align {
+  text-align: center;
 }
