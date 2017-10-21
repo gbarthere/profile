@@ -1,16 +1,14 @@
 #social {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
 }
 
 .logo {
-  color: #666;
+  color: #384047;
   font-size: 50px;
   transition: all 0.5s ease;
 }
 
 .logo:hover {
-  color: #444;
+  color: #1AAE88;
   font-size: 70px;
 }
